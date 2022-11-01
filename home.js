@@ -21,4 +21,34 @@ let timesClicked = 0;
 
   $(`.navHomeButton`).on(`click`, $openNav);
   // $(`.navHomeButton`).on(`click`, $closeNav);
+
+
+  //////////////model code
+	//Grabbing Elements
+	const $openBtn = $('#switch');
+	const $modal = $('#playerModal');
+	const $closeBtn = $('#close');
+
+    //Open Model
+	const openModal = () => {
+        $modal.css('display', 'block');
+
+      };
+
+      //close monster list
+      const closeModal = () => {
+        $modal.css('display', 'none');
+        $(`#myTeam`).empty();
+
+      };
+
+      //model box code
+      $openBtn.on('click', openModal);
+      $closeBtn.on('click', closeModal);
+
+      //////////////////////
+      /////////////////////
+
+
+
 })
