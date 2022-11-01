@@ -10,6 +10,10 @@ header {
   border-radius: 25px 25px 0 0;
 }
 
+h3 {
+  margin: 2px 0 2px 0;
+}
+
 #container {
 display: flex;
 flex-direction: column;
@@ -19,7 +23,8 @@ flex-direction: column;
 position: relative;
 text-align: center;
 flex-direction: column;
- min-height: 2vh;
+height: 30px;
+ min-height: 20px;
  width: 100%;
  background-color: #6CB4EE;
  /* overflow-x: hidden; */
@@ -28,21 +33,21 @@ border-radius: 0 0 25px 25px;
 }
 
 .navHomeButton {
-  padding: 1px 8px 8px 8px;
+  padding: 1px 2px 2px 2px;
   text-decoration: none;
   font-size: 25px;
-  color: #818181;
+  color: #101010;
   display: block;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .navButton {
-  padding: 8px 8px 8px 32px;
+  padding: 8px 8px 8px 8px;
   text-decoration: block;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+  font-size: 15px;
+  color: #101010;
+  display: none;
+  transition: 0.6s;
 }
 #footerDiv {
   display: flex;
