@@ -25,26 +25,24 @@ let timesClicked = 0;
 
   //////////////model code
 	//Grabbing Elements
-	const $openBtn = $('#switch');
-	const $modal = $('#playerModal');
-	const $closeBtn = $('#close');
+
+	// const $modal = $('#playerModal');
+	// const $closeBtn = $('#close');
 
     //Open Model
 	const openModal = () => {
-        $modal.css('display', 'block');
-
+    $('#model').css('display', 'block');
       };
 
       //close monster list
-      const closeModal = () => {
-        $modal.css('display', 'none');
-        $(`#myTeam`).empty();
-
-      };
+      // const closeModal = () => {
+      //   $modal.css('display', 'none');
+      //   $(`#myTeam`).empty();
+      // };
 
       //model box code
-      $openBtn.on('click', openModal);
-      $closeBtn.on('click', closeModal);
+      $('.frequent').on('click', openModal);
+      // $closeBtn.on('click', closeModal);
 
       //////////////////////
       /////////////////////
