@@ -4,9 +4,9 @@ let timesClicked = 0;
   const $openNav = () => {
     timesClicked++;
     if (timesClicked % 2 == 0){
-          $(`#navigation`).css(`width`,`35px`)
+          $(`#navigation`).css(`height`,`35px`)
     } else {
-      $(`#navigation`).css(`width`,`100px`)
+      $(`#navigation`).css(`height`,`100px`)
     }
 
 };
