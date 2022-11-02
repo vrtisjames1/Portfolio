@@ -75,6 +75,25 @@ border-radius: 0 0 25px 25px;
   color: black;
 }
 
+@media only screen and (max-width: 600px) {
+  #footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8em;
+    gap:0.2em;
+    position: fixed;
+    bottom:0px;
+    height: auto;
+    width:100%;
+    border: 1px solid #6CB4EE;
+    background-color: #6CB4EE;
+    color:white;
+    border-radius: 25px;
+    color: black;
+  }
+}
+
 .footer {
 }
 
@@ -188,7 +207,21 @@ border-radius: 0 0 25px 25px;
   margin-top: 15%;
   border-radius: 25px;
 }
+
+@media only screen and (max-width: 600px) {
+  #modalText {
+    background-color: white;
+    height: 350px;
+    width: 250px;
+    margin: auto;
+    padding: 15px;
+    margin-top: 15%;
+    border-radius: 25px;
+    overflow: scroll;
+  }
+}
+
 #closeBtn {
   margin-top: 3em;
-  text-align: left;
+  text-align: right;
 }
