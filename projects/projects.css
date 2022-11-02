@@ -83,23 +83,27 @@ border-radius: 0 0 25px 25px;
 /* ////////////// */
 #carousel {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   position: relative;
-  padding: 0 0 3em 0;
+  padding: 0 3em 3em 3em;
+  max-width: 100%;
 }
 
 #carouselImages img {
-  width: 100%;
+  max-width: 60%;
   display: none;
+  justify-content: center;
+  margin: auto;
 }
 
 #carouselImages img:first-of-type {
   display: flex;
   height: auto;
-
   border: 0.3em solid black;
 }
+
+
 
 
 /* arrow buttons */
@@ -108,6 +112,10 @@ border-radius: 0 0 25px 25px;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 1.5em;
+}
+
+.arrow:hover {
+  box-shadow: 2px 5px #F0F0F0;
 }
 
 .right {
