@@ -13,36 +13,22 @@ let timesClicked = 0;
 
 };
 
-
-  // const $closeNav = () => {
-  //   $(`#navigation`).css(`width`,`35px`);
-  //   console.log(`hello`)
-  // }
-
   $(`.navHomeButton`).on(`click`, $openNav);
-  // $(`.navHomeButton`).on(`click`, $closeNav);
 
 
-  //////////////model code
-	//Grabbing Elements
-
-	// const $modal = $('#playerModal');
-	// const $closeBtn = $('#close');
-
+//////model design
+  // close model
+  const $closeModal = () => {
+    $(`#model`).css('display', 'none');
+  }
     //Open Model
-	const openModal = () => {
+	const $openModal = () => {
     $('#model').css('display', 'block');
       };
 
-      //close monster list
-      // const closeModal = () => {
-      //   $modal.css('display', 'none');
-      //   $(`#myTeam`).empty();
-      // };
-
       //model box code
-      $('.frequent').on('click', openModal);
-      // $closeBtn.on('click', closeModal);
+      $('.frequent').on('click', $openModal);
+      $('#close').on('click', $closeModal);
 
       //////////////////////
       /////////////////////
