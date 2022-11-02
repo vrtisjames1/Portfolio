@@ -1,5 +1,12 @@
 $(() => {
 
+
+///////////////////carousel
+const $carousel = () => {
+  
+}
+
+
 let timesClicked = 0;
   const $openNav = () => {
     timesClicked++;
