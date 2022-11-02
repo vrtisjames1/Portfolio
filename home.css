@@ -55,7 +55,9 @@ border-radius: 0 0 25px 25px;
   display: flex;
   justify-content: center;
 }
+
 img {
+  height: auto;
   width: 50%;
   margin: 20px;
   border: 10px solid gray;
@@ -109,11 +111,11 @@ img {
   position: fixed;
 }
 
-#player-textbox {
+#modalText {
     background-color: white;
-    height: 350px;
-    width: 550px;
-    border-radius: 2px;
+    height: 30vh;
+    width: 50vw;
+    border-radius: 25px;
     margin: 150px auto;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     padding: 2%;
