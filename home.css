@@ -109,7 +109,7 @@ img {
   position: fixed;
 }
 
-/* #player-textbox {
+#player-textbox {
     background-color: white;
     height: 350px;
     width: 550px;
@@ -121,7 +121,7 @@ img {
     overflow: scroll;
 }
 
-#modal-footer {
+/* #modal-footer {
     text-align: right;
 }
 
@@ -135,4 +135,4 @@ img {
     color: white;
     font-family: 'Arial';
     cursor: pointer;
-} */ */
+} */
