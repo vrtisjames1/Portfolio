@@ -91,6 +91,21 @@ border-radius: 0 0 25px 25px;
 }
 
 /* Home page CSS */
+
+/* phone display */
+@media (max-width: 600px) {
+  #modalText {
+    background-color: white;
+    height: 200px;
+    width: 250px;
+    margin: auto;
+    padding: 15px;
+    margin-top: 15%;
+    border-radius: 25px;
+  }
+}
+
+
 #aboutMe {
   flex: 1;
   position: relative;
