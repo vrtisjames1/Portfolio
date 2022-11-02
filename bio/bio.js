@@ -7,18 +7,31 @@ let timesClicked = 0;
           $(`#navigation`).css(`height`,`30px`)
           $(`.navButton`).css(`display`,`none`)
     } else {
-      $(`#navigation`).css(`height`,`160px`)
+      $(`#navigation`).css(`height`,`180px`)
       $(`.navButton`).css(`display`,`block`)
     }
 
 };
 
-
-  // const $closeNav = () => {
-  //   $(`#navigation`).css(`width`,`35px`);
-  //   console.log(`hello`)
-  // }
-
   $(`.navHomeButton`).on(`click`, $openNav);
-  // $(`.navHomeButton`).on(`click`, $closeNav);
+
+
+//////model design
+  // close model
+  const $closeModal = () => {
+    $(`#model`).css('display', 'none');
+  }
+    //Open Model
+	const $openModal = () => {
+    $('#model').css('display', 'block');
+      };
+
+      //model box code
+      $('.frequent').on('click', $openModal);
+      $('#close').on('click', $closeModal);
+//////////////////////
+/////////////////////
+
+
+
 })

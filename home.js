@@ -29,9 +29,8 @@ let timesClicked = 0;
       //model box code
       $('.frequent').on('click', $openModal);
       $('#close').on('click', $closeModal);
-
-      //////////////////////
-      /////////////////////
+//////////////////////
+/////////////////////
 
 
 
