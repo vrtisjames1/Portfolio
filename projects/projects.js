@@ -16,16 +16,28 @@ const $carouselRight = () => {
       $carouselImages.children().eq(rightClick-1).detach().prependTo($carouselImages)
         }
 
+
+const $projectDes = $(`<p>`).attr('id',`projectDescription`).appendTo(`#projectHeader`);
+
 const $projectText =() => {
-  const $projectDes = $(`<p>`).appendTo(`#title`);
-  if($carouselImages.children().eq(0).contains('.Pokemon')){
-    $projectDes.text(`Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proiden`);
+
+  const $carouselImages=$(`#carouselImages`);
+
+  if($carouselImages.children().eq(0).hasClass(`pokemon`)){
+    $projectDes.text(`GOTTA CATCH EM ALL!... POKEMON!.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim`);
+  } else if ($carouselImages.children().eq(0).hasClass(`dbscan`)) {
+    $projectDes.text(`DBSCAN...False data injection... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim gfdg sfaf rgeggsdf.`);
+  } else if ($carouselImages.children().eq(0).hasClass(`prompt`)) {
+    $projectDes.text(`Promp Game...General Assembly Landscaper!... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim gfdg sfaf rgeggsdf.`);
   }
 }
 
+$projectText();
+
 $('.right').on('click', $carouselRight);
 $('.left').on('click', $carouselLeft);
-
+$('.right').on('click', $projectText);
+$('.left').on('click', $projectText);
 
 ///////////////////carousel
 ///////////////////
@@ -34,7 +46,7 @@ let timesClicked = 0;
   const $openNav = () => {
     timesClicked++;
     if (timesClicked % 2 == 0){
-          $(`#navigation`).css(`height`,`30px`)
+          $(`#navigation`).css(`height`,`35px`)
           $(`.navButton`).css(`display`,`none`)
     } else {
       $(`#navigation`).css(`height`,`180px`)
