@@ -108,5 +108,6 @@ border-radius: 0 0 25px 25px;
   border-radius: 25px;
 }
 #closeBtn {
-  text-align: right;
+  margin-top: 3em;
+  text-align: left;
 }

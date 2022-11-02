@@ -166,23 +166,6 @@ border-radius: 0 0 25px 25px;
 
 /* Model design */
 
-/* phone display */
-@media (max-width: 600px){
-
-  #modalText {
-    background-color: blue;
-    height: auto;
-    width: 100%;
-    margin: auto;
-    padding: 15px;
-    margin-top: 15%;
-    border-radius: 25px;
-  }
-
-  #closeBtn {
-    text-align: left;
-  }
-}
 
 #model {
   display: none;
@@ -206,5 +189,6 @@ border-radius: 0 0 25px 25px;
   border-radius: 25px;
 }
 #closeBtn {
-  text-align: right;
+  margin-top: 3em;
+  text-align: left;
 }
