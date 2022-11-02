@@ -122,14 +122,14 @@ border-radius: 0 0 25px 25px;
 /* arrow buttons */
 .arrow {
   border: solid black;
-  border-width: 0 3px 3px 0;
+  border-width: 0 0.2em 0.2em 0;
   display: inline-block;
   padding: 1.5em;
   margin-top: 5em;
 }
 
 .arrow:hover {
-  box-shadow: 2px 5px #F0F0F0;
+  box-shadow: 0.2em 0.3em #F0F0F0;
 }
 
 .right {

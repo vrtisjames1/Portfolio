@@ -94,7 +94,7 @@ border-radius: 0 0 25px 25px;
 #aboutMe {
   flex: 1;
   position: relative;
-  margin: 2em 2em 4em 2em;
+  margin: 0 2em 4em 2em;
 }
 
 /* Model design */
