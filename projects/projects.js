@@ -28,7 +28,7 @@ const $projectText =() => {
   } else if ($carouselImages.children().eq(0).hasClass(`dbscan`)) {
     $projectDes.text(`DBSCAN...False data injection... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim gfdg sfaf rgeggsdf.`);
   } else if ($carouselImages.children().eq(0).hasClass(`prompt`)) {
-    $projectDes.text(`Promp Game...General Assembly Landscaper!... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim gfdg sfaf rgeggsdf.`);
+    $projectDes.text(`Prompt Game...General Assembly Landscaper!... Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim gfdg sfaf rgeggsdf.`);
   }
 }
 
