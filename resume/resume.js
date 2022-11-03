@@ -39,13 +39,25 @@ let timesClicked = 0;
 const edit = () => {
   const $editBtn = $(`<button>`).text(`Edit`).attr(`id`,`edit`).appendTo(`#button`);
 }
-edit();
 
-const $editEmpText = () => {
-
-  const $editableTextBox = $(`<input>`).attr(`id`,`text`).attr(`id`,`empText`)
-  $(`#empText`).replaceWith($editableTextBox).css('border',`transparent`);
+const submit = () => {
+  const $submitBtn = $(`<button>`).text(`Submit`).attr(`id`,`submit`).appendTo(`#button`);
 }
+edit();
+submit();
+
+  const $editEmpText = () => {
+
+    //copy existing text value//
+    let $empTextValue = $(`#empText`).text();
+
+    //create textarea box//
+    const $editableTextArea = $(`<textarea>`).attr(`id`,`empText`).text($empTextValue).css(`padding`,`0`).css(`margin`, `0`);
+
+    //replace text with edit box
+    $(`#empText`).replaceWith($editableTextArea).text($empTextValue);
+
+  }
 
 $(`#edit`).on(`click`, $editEmpText);
 
