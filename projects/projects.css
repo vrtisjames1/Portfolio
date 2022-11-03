@@ -1,5 +1,6 @@
 body {
-  background-color: #B9D9EB;
+  /* background-color: #B9D9EB; */
+  background-image: url("../background_image.jpg");
 }
 
 header {
@@ -190,7 +191,7 @@ border-radius: 0 0 25px 25px;
 
 #model {
   display: none;
-  background-color: rgba(100,50,200,0.3);
+  background-color: rgba(255,255,255,0.3);
   top: 0;
   left: 0;
   height: 100%;
@@ -208,6 +209,7 @@ border-radius: 0 0 25px 25px;
   padding: 15px;
   margin-top: 15%;
   border-radius: 25px;
+  border: 2px solid black;
 }
 
 @media only screen and (max-width: 600px) {
@@ -220,6 +222,7 @@ border-radius: 0 0 25px 25px;
     margin-top: 15%;
     border-radius: 25px;
     overflow: scroll;
+    border: 1px solid black;
   }
 }
 

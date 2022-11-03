@@ -5,3 +5,5 @@ Nov 2: Working on creating the model popup. Not sure if there is a method to pul
 struggled with the model when adjusting the background transparency. I realized that only the background-color property needed to be transparent.
 
 I realized I had trouble creating a media query for the model model. Still useable but needed to change the close button to the left hand side.
+
+Nov 3: Had a lot of difficulty creating the editable resume. Once complete, I realized the edited text will not save when the page reloads. Something to look into when I learn about the backend. 
