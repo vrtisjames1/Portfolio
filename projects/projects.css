@@ -170,7 +170,7 @@ border-radius: 0 0 25px 25px;
 /* phone display */
 
 .arrow:hover {
-  box-shadow: 0.2em 0.3em #F0F0F0;
+  box-shadow: 0.2em 0.3em #A9A9A9;
 }
 
 .right {
@@ -191,7 +191,7 @@ border-radius: 0 0 25px 25px;
 
 #model {
   display: none;
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255,255,255,0.4);
   top: 0;
   left: 0;
   height: 100%;
