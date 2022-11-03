@@ -51,29 +51,71 @@ let $empTextValue = $(`#empText`).text();
 let $eduTextValue = $(`#eduText`).text();
 let $comTextValue = $(`#comText`).text();
 //create textarea box//
-const $editableTextArea = $(`<textarea>`).attr(`id`,`empText`).text($empTextValue).css(`padding`,`0`);
-// const $editableTextArea = $(`<textarea>`).attr(`id`,`empText`).text($empTextValue).css(`padding`,`0`);
-// const $editableTextArea = $(`<textarea>`).attr(`id`,`empText`).text($empTextValue).css(`padding`,`0`);
+const $empEditableTextArea = $(`<textarea>`).attr(`id`,`empText`).text($empTextValue).css(`padding`,`0`);
+const $eduEditableTextArea = $(`<textarea>`).attr(`id`,`empText`).text($eduTextValue).css(`padding`,`0`);
+const $comEditableTextArea = $(`<textarea>`).attr(`id`,`empText`).text($comTextValue).css(`padding`,`0`);
 
   //employment text box creation
   const $editEmpText = () => {
 
     //replace text with edit box
-    $(`#empText`).replaceWith($editableTextArea).text($empTextValue);
+    $(`#empText`).replaceWith($empEditableTextArea).text($empTextValue);
   }
 
   //submit text box creation
   const $submitEmpText = () => {
     //copy existing text value//
-    let $empTextValue = $($editableTextArea).val();
+    let $empTextValue = $($empEditableTextArea).val();
 
     console.log($empTextValue);
     //create textarea box//
     const $submitTextArea = $(`<p>`).attr(`id`,`empText`).text($empTextValue).css(`padding`,`1em`).css(`white-space`, `pre-wrap`);
     //replace text with edit box
-    $($editableTextArea).replaceWith($submitTextArea).text($empTextValue);
+    $($empEditableTextArea).replaceWith($submitTextArea).text($empTextValue);
+  }
+
+  //education text box creation
+  const $editEduText = () => {
+
+    //replace text with edit box
+    $(`#eduText`).replaceWith($eduEditableTextArea).text($eduTextValue);
+  }
+
+  //submit text box creation
+  const $submitEduText = () => {
+    //copy existing text value//
+    let $eduTextValue = $($eduEditableTextArea).val();
+
+    console.log($eduTextValue);
+    //create textarea box//
+    const $submitTextArea = $(`<p>`).attr(`id`,`eduText`).text($eduTextValue).css(`padding`,`1em`).css(`white-space`, `pre-wrap`);
+    //replace text with edit box
+    $($eduEditableTextArea).replaceWith($submitTextArea).text($eduTextValue);
+  }
+
+  //community text box creation
+  const $editComText = () => {
+
+    //replace text with edit box
+    $(`#comText`).replaceWith($comEditableTextArea).text($comTextValue);
+  }
+
+  //submit text box creation
+  const $submitComText = () => {
+    //copy existing text value//
+    let $comTextValue = $($comEditableTextArea).val();
+
+    console.log($comTextValue);
+    //create textarea box//
+    const $submitTextArea = $(`<p>`).attr(`id`,`comText`).text($comTextValue).css(`padding`,`1em`).css(`white-space`, `pre-wrap`);
+    //replace text with edit box
+    $($comEditableTextArea).replaceWith($submitTextArea).text($comTextValue);
   }
 
 $(`#edit`).on(`click`, $editEmpText);
 $(`#submit`).on(`click`, $submitEmpText);
+$(`#edit`).on(`click`, $editEduText);
+$(`#submit`).on(`click`, $submitEduText);
+$(`#edit`).on(`click`, $editComText);
+$(`#submit`).on(`click`, $submitComText);
 })
