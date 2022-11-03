@@ -92,17 +92,18 @@ border-radius: 0 0 25px 25px;
 }
 
 /* employment CSS */
-#employment {
+#employment, #education, #community {
   margin-top: 1em;
   display: flex;
   justify-content: center;
   border: 1px solid black;
 }
 
-#empBox {
+#empBox, #eduBox, #comBox {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   flex: 1;
   padding: 0.3em;
   font-weight: bold;
@@ -110,8 +111,8 @@ border-radius: 0 0 25px 25px;
   border-right: 1px solid black;
 }
 
-#empText {
-  flex: 2;
+#empText, #eduText, #comText {
+  flex: 3;
   flex-wrap: wrap;
   background-color: white;
   margin: 0;

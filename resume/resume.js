@@ -48,8 +48,12 @@ submit();
 
 //copy existing text value//
 let $empTextValue = $(`#empText`).text();
+let $eduTextValue = $(`#eduText`).text();
+let $comTextValue = $(`#comText`).text();
 //create textarea box//
 const $editableTextArea = $(`<textarea>`).attr(`id`,`empText`).text($empTextValue).css(`padding`,`0`);
+// const $editableTextArea = $(`<textarea>`).attr(`id`,`empText`).text($empTextValue).css(`padding`,`0`);
+// const $editableTextArea = $(`<textarea>`).attr(`id`,`empText`).text($empTextValue).css(`padding`,`0`);
 
   //employment text box creation
   const $editEmpText = () => {
