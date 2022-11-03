@@ -95,7 +95,6 @@ border-radius: 0 0 25px 25px;
 #employment, #education, #community {
   margin-top: 1em;
   display: flex;
-  justify-content: center;
   border: 1px solid black;
 }
 
@@ -121,6 +120,25 @@ border-radius: 0 0 25px 25px;
   margin: 0;
   padding: 1em;
   white-space: pre-wrap;
+  text-align: top;
+}
+
+@media only screen and (max-width: 600px) {
+  #empBox, #eduBox, #comBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    width: 20%;
+    flex-wrap: wrap;
+    flex: 1;
+    padding: 0.3em;
+    font-weight: bold;
+    background-color: #F9F6EE;
+    border-right: 1px solid black;
+    font-size: 0.8em;
+  }
 }
 
 /* edit btn */
