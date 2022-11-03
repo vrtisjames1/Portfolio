@@ -46,19 +46,30 @@ const submit = () => {
 edit();
 submit();
 
+//copy existing text value//
+let $empTextValue = $(`#empText`).text();
+//create textarea box//
+const $editableTextArea = $(`<textarea>`).attr(`id`,`empText`).text($empTextValue).css(`padding`,`0`);
+
+  //employment text box creation
   const $editEmpText = () => {
-
-    //copy existing text value//
-    let $empTextValue = $(`#empText`).text();
-
-    //create textarea box//
-    const $editableTextArea = $(`<textarea>`).attr(`id`,`empText`).text($empTextValue).css(`padding`,`0`).css(`margin`, `0`);
 
     //replace text with edit box
     $(`#empText`).replaceWith($editableTextArea).text($empTextValue);
+  }
 
+  //submit text box creation
+  const $submitEmpText = () => {
+    //copy existing text value//
+    let $empTextValue = $($editableTextArea).val();
+
+    console.log($empTextValue);
+    //create textarea box//
+    const $submitTextArea = $(`<p>`).attr(`id`,`empText`).text($empTextValue).css(`padding`,`1em`).css(`white-space`, `pre-wrap`);
+    //replace text with edit box
+    $($editableTextArea).replaceWith($submitTextArea).text($empTextValue);
   }
 
 $(`#edit`).on(`click`, $editEmpText);
-
+$(`#submit`).on(`click`, $submitEmpText);
 })
