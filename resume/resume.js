@@ -1,5 +1,6 @@
 $(() => {
-
+/////////////////
+///////Navigation menu
 let timesClicked = 0;
   const $openNav = () => {
     timesClicked++;
@@ -10,11 +11,11 @@ let timesClicked = 0;
       $(`#navigation`).css(`height`,`180px`)
       $(`.navButton`).css(`display`,`block`)
     }
-
 };
 
   $(`.navHomeButton`).on(`click`, $openNav);
-
+/////////////////
+/////////////////
 
 //////model design
   // close model
@@ -32,6 +33,20 @@ let timesClicked = 0;
 //////////////////////
 /////////////////////
 
+/////////////////
+/////emloyment History
 
+const edit = () => {
+  const $editBtn = $(`<button>`).text(`Edit`).attr(`id`,`edit`).appendTo(`#button`);
+}
+edit();
+
+const $editEmpText = () => {
+
+  const $editableTextBox = $(`<input>`).attr(`id`,`text`).attr(`id`,`empText`)
+  $(`#empText`).replaceWith($editableTextBox).css('border',`transparent`);
+}
+
+$(`#edit`).on(`click`, $editEmpText);
 
 })
