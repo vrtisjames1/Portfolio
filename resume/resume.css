@@ -104,6 +104,9 @@ border-radius: 0 0 25px 25px;
   align-items: center;
   justify-content: center;
   text-align: center;
+  height: auto;
+  width: 20%;
+  flex-wrap: wrap;
   flex: 1;
   padding: 0.3em;
   font-weight: bold;
@@ -112,7 +115,7 @@ border-radius: 0 0 25px 25px;
 }
 
 #empText, #eduText, #comText {
-  flex: 3;
+  width: 75%;
   flex-wrap: wrap;
   background-color: white;
   margin: 0;
