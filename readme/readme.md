@@ -9,3 +9,5 @@ struggled with the model when adjusting the background transparency. I realized 
 I realized I had trouble creating a media query for the model model. Still useable but needed to change the close button to the left hand side.
 
 Nov 3: Had a lot of difficulty creating the editable resume. Once complete, I realized the edited text will not save when the page reloads. Something to look into when I learn about the backend.
+
+Nov 4: Spent most of the day trying to figure out the sticky footer. Had a lot of complications with various pages. Decided to update the UI/UX of the website.

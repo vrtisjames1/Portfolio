@@ -2,10 +2,8 @@ html, body {
   min-height: 100vh;
   max-height: 100%;
   max-width: 100%;
-  background: rgb(23,17,115);
-  background: linear-gradient(117deg, rgba(23,17,115,1) 0%, rgba(9,90,121,1) 30%, rgba(148,219,233,1) 100%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-image: url("../background.jpg");
+
 }
 
 body {
