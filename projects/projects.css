@@ -134,10 +134,10 @@ border-top: none;
 }
 
 #carouselImages img {
-  max-width: 60%;
+  max-width: 100%;
   display: none;
   justify-content: center;
-  margin: auto;
+  margin: none;
 }
 
 #carouselImages img:first-of-type {
@@ -156,7 +156,7 @@ border-top: none;
 
 #projectDescription {
   font-size: 0.6em;
-  width: 60%;
+  width: 90%;
   justify-content: center;
   background-color: white;
   padding: 1em;
@@ -179,18 +179,22 @@ border-top: none;
     border-width: 0 0.2em 0.2em 0;
     display: inline-block;
     padding: 0.6em;
-    margin-top: 5em;
   }
 
   #carouselImages img {
-    max-width: 80%;
+    max-width: 90%;
     display: none;
     justify-content: center;
     margin: auto;
   }
+
+  .arrow:active {
+    border: solid white;
+  }
 }
 /* phone display */
 
+@media (min-width: 600px) {
 .arrow:hover {
   box-shadow: 0.2em 0.3em #A9A9A9;
   border: solid white;
@@ -199,7 +203,7 @@ border-top: none;
   padding: 1.5em;
   margin-top: 5em;
 }
-
+}
 .right {
   /* transform: rotate(-45deg); */
   -webkit-transform: rotate(-45deg);
@@ -244,12 +248,11 @@ border-top: none;
   #modalText {
     background-color: white;
     height: 400px;
-    width: 350px;
+    width: 90%;
     margin: auto;
     padding: 15px;
     margin-top: 15%;
     border-radius: 25px;
-    overflow: scroll;
     border: 1px solid black;
     box-shadow: 3px 3px black;
   }
