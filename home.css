@@ -1,14 +1,15 @@
 body {
-  /* background-color: #B9D9EB; */
-  background-image: url("background_image.jpg");
+  background: rgb(23,17,115);
+  background: linear-gradient(117deg, rgba(23,17,115,1) 0%, rgba(9,90,121,1) 30%, rgba(148,219,233,1) 100%);
 }
 
 header {
-
-  background-color: #72A0C1;
+  background: rgb(195,194,204);
+  background: linear-gradient(117deg, rgba(195,194,204,1) 0%, rgba(113,121,129,1) 25%, rgba(179,190,193,1) 100%);
   padding: 0.5vh;
   text-align: center;
   border-radius: 25px 25px 0 0;
+  text-shadow: 2px 2px silver;
 }
 
 #container {
@@ -28,6 +29,20 @@ height: 30px;
 transition: 0.5s;
 border-radius: 0 0 25px 25px;
 }
+
+#navigation:hover {
+position: relative;
+text-align: center;
+flex-direction: column;
+height: 30px;
+ min-height: 20px;
+ width: 100%;
+ background: rgb(195,194,204);
+ background: linear-gradient(117deg, rgba(195,194,204,1) 0%, rgba(113,121,129,1) 19%, rgba(179,190,193,1) 100%);
+transition: 0.5s;
+border-radius: 0 0 25px 25px;
+}
+
 
 .navHomeButton {
   padding: 1px 2px 2px 2px;
@@ -126,6 +141,17 @@ border-radius: 0 0 25px 25px;
   background-color: white;
 }
 
+@media only screen and (max-width: 600px) {
+  #aboutMe {
+    flex: 1;
+    position: relative;
+    margin: 0 0.2em 5em 0.2em;
+    border: 1px solid black;
+    padding: 0.4em;
+    background-color: white;
+  }
+}
+
 /* Model design */
 #model {
   display: none;
@@ -148,6 +174,7 @@ border-radius: 0 0 25px 25px;
   margin-top: 15%;
   border-radius: 25px;
   border: 2px solid black;
+  box-shadow: 3px 3px black;
 }
 @media only screen and (max-width: 600px) {
   #modalText {
@@ -160,6 +187,7 @@ border-radius: 0 0 25px 25px;
     border-radius: 25px;
     overflow: scroll;
     border: 1px solid black;
+    box-shadow: 3px 3px black;
   }
 }
 
