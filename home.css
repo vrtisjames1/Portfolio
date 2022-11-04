@@ -93,7 +93,7 @@ border-top: none;
   height: auto;
   width: 50%;
   margin: 20px;
-  border: 0.3em solid #f0f8ff;
+  border: 0.3em solid #72A0C1;
 }
 
 #footerDiv {
@@ -156,7 +156,8 @@ border-top: none;
     font-size: 1.4rem;
     position: relative;
     width: 0%;
-    animation: typing 3s forwards;
+    animation: typing 4s forwards;
+    animation-delay: 1s;
 }
 
  @keyframes typing {
