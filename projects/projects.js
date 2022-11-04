@@ -49,7 +49,7 @@ let timesClicked = 0;
           $(`#navigation`).css(`height`,`35px`)
           $(`.navButton`).css(`display`,`none`)
     } else {
-      $(`#navigation`).css(`height`,`170px`)
+      $(`#navigation`).css(`height`,`180px`)
       $(`.navButton`).css(`display`,`block`)
     }
 

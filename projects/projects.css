@@ -21,6 +21,7 @@ header {
   margin: 1em 1em 0 1em;
   border: 1px solid black;
   border-bottom: none;
+  font-family: 'Michroma', sans-serif;
 }
 
 #container {
@@ -65,12 +66,13 @@ border-top: none;
 }
 
 .navHomeButton {
-  padding: 1px 2px 2px 2px;
+  padding: 0.1em;
   text-decoration: none;
-  font-size: 25px;
+  font-size: 1.2em;
   color: #101010;
   display: block;
   transition: 0.6s;
+  font-family: 'Michroma', sans-serif;
 }
 
 .navButton {
@@ -80,6 +82,7 @@ border-top: none;
   color: #101010;
   display: none;
   transition: 0.6s;
+  font-family: 'Michroma', sans-serif;
 }
 #footerDiv {
   flex: 1;
@@ -99,6 +102,8 @@ border-top: none;
   padding: 1vh 1vw;
   color:white;
   color: black;
+  font-size: 0.8em;
+  font-family: 'Michroma', sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
@@ -106,7 +111,7 @@ border-top: none;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 0.9em;
+    font-size: 0.6em;
     gap:0.2em;
     height: auto;
     width:100%;
@@ -114,6 +119,7 @@ border-top: none;
     background-color: #72A0C1;
     color:white;
     color: black;
+    font-family: 'Michroma', sans-serif;
   }
 }
 
