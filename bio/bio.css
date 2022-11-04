@@ -1,6 +1,16 @@
-body {
+html, body {
+  min-height: 100%;
+  max-width: 100%;
   background: rgb(23,17,115);
   background: linear-gradient(117deg, rgba(23,17,115,1) 0%, rgba(9,90,121,1) 30%, rgba(148,219,233,1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
 }
 
 header {
@@ -10,18 +20,18 @@ header {
   text-align: center;
   border-radius: 25px 25px 0 0;
   text-shadow: 2px 2px silver;
-}
-
-
-#me {
-  margin: 2px 0 2px 0;
-  text-align: center;
+  margin: 1em 1em 0 1em;
+  border: 1px solid black;
+  border-bottom: none;
 }
 
 #container {
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
+overflow: auto;
+height: 100%;
+flex: 1 0 auto;
 }
 
 #navigation {
@@ -30,10 +40,14 @@ text-align: center;
 flex-direction: column;
 height: 30px;
  min-height: 20px;
- width: 100%;
+ max-width: 100%;
  background-color: #72A0C1;
 transition: 0.5s;
 border-radius: 0 0 25px 25px;
+margin: 0 1em 0 1em;
+border: 1px solid black;
+border-top: none;
+
 }
 
 #navigation:hover {
@@ -42,11 +56,14 @@ text-align: center;
 flex-direction: column;
 height: 30px;
  min-height: 20px;
- width: 100%;
+ max-width: 100%;
  background: rgb(195,194,204);
  background: linear-gradient(117deg, rgba(195,194,204,1) 0%, rgba(113,121,129,1) 19%, rgba(179,190,193,1) 100%);
 transition: 0.5s;
 border-radius: 0 0 25px 25px;
+margin: 0 1em 0 1em;
+border: 1px solid black;
+border-top: none;
 }
 
 .navHomeButton {
@@ -68,7 +85,6 @@ border-radius: 0 0 25px 25px;
 }
 #footerDiv {
   flex: 1;
-  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -78,15 +94,12 @@ border-radius: 0 0 25px 25px;
   flex-wrap: wrap;
   justify-content: space-evenly;
   flex-direction: row;
-  position: relative;
-  bottom:0px;
   height: auto;
   width:100%;
   border: 4px solid #72A0C1;
   background-color: #72A0C1;
   padding: 1vh 1vw;
   color:white;
-  border-radius: 25px;
   color: black;
 }
 
@@ -97,14 +110,11 @@ border-radius: 0 0 25px 25px;
     align-items: center;
     font-size: 0.9em;
     gap:0.2em;
-    position: relative;
-    bottom:0px;
     height: auto;
     width:100%;
     border: 1px solid #72A0C1;
     background-color: #72A0C1;
     color:white;
-    border-radius: 25px;
     color: black;
   }
 }
@@ -114,7 +124,8 @@ border-radius: 0 0 25px 25px;
 
 /* Home page CSS */
 #container2 {
-  margin: 1em 0 4em 0;
+  display: flex;
+  margin: 1em 0 1em 0;
 }
 #bioHeading {
   text-align: center;
