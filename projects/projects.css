@@ -137,6 +137,7 @@ border-top: none;
 }
 
 #carouselImages img {
+
   max-width: 100%;
   display: none;
   justify-content: center;

@@ -178,7 +178,7 @@ border-top: none;
 #aboutMe {
   flex: 1;
   position: relative;
-  margin: 0 1em 5em 1em;
+  margin: 0 1em 1em 1em;
   border: 1px solid black;
   padding: 0.4em;
   background-color: white;
