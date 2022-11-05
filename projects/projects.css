@@ -89,6 +89,7 @@ border-top: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  max-height: 5vh;
 }
 #footer {
   display: flex;
