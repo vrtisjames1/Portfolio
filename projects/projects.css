@@ -130,24 +130,25 @@ border-top: none;
 #carousel {
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  position: relative;
+  /* align-items: stretch; */
+  /* position: relative; */
   padding: 0 2em 2em 2em;
   max-width: 100%;
-  padding-bottom: 5em;
+  padding-bottom: 1em;
 }
 
 #carouselImages img {
-
-  max-width: 100%;
   display: none;
-  justify-content: center;
+  align-content: center;
   margin: none;
 }
 
 #carouselImages img:first-of-type {
   display: flex;
-  height: auto;
+  max-height: 80%;
+  max-width: 100%;
+  align-items: center;
+  margin: auto;
   border: 0.3em solid black;
 }
 
@@ -161,7 +162,7 @@ border-top: none;
 
 #projectDescription {
   font-size: 0.6em;
-  width: 90%;
+  width: 88%;
   justify-content: center;
   background-color: white;
   padding: 1em;
