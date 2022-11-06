@@ -90,6 +90,7 @@ border-top: none;
   flex-wrap: wrap;
   justify-content: space-evenly;
   max-height: 7vh;
+  height: 7vh;
 }
 #footer {
   display: flex;
@@ -133,7 +134,7 @@ border-top: none;
   align-items: flex-start;
   padding: 0 2em 2em 2em;
   max-width: 60%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 5em auto;
   padding-bottom: 1em;
 }
 
