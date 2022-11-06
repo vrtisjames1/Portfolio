@@ -101,6 +101,7 @@ border-top: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  max-height: 7vh;
 }
 #footer {
   display: flex;

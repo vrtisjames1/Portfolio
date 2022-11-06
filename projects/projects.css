@@ -89,7 +89,7 @@ border-top: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  max-height: 5vh;
+  max-height: 7vh;
 }
 #footer {
   display: flex;
@@ -172,7 +172,7 @@ border-top: none;
 /* arrow buttons */
 .arrow {
   border: solid black;
-  box-shadow: 0.2em 0.3em #ffefd5;
+  box-shadow: 0.2em 0.3em #fff0f5;
   border-width: 0 0.4em 0.4em 0;
   display: inline-block;
   padding: 1.5em;

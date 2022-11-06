@@ -24,11 +24,11 @@ const $projectText =() => {
   const $carouselImages=$(`#carouselImages`);
 
   if($carouselImages.children().eq(0).hasClass(`pokemon`)){
-    $projectDes.text(`[DOM, Pokemon Game] GOTTA CATCH EM ALL!... This game was developed with a partner. This game was originally a terminal prompt game, and transformed into an interactive DOM browser game. The player will fight multiple enemies until all of them are destroyed, or until the player decides to flee!`);
+    $projectDes.text(`[DOM, Pokemon Game] GOTTA CATCH EM ALL!... This game was developed with a partner. The game originally was created as a terminal prompt game, but transformed into an interactive DOM browser game. The character player will fight multiple enemies until all of them are destroyed, or until the player decides to flee!`);
   } else if ($carouselImages.children().eq(0).hasClass(`dbscan`)) {
-    $projectDes.text(`[DBSCAN, False Data Injection] This is an unsupervised data group graduate project developed with programming languages R and Python. The voltage data from a power line was analyzed to see how well three unsupervised methods could detect erroneous errors.  `);
+    $projectDes.text(`[DBSCAN, False Data Injection] This is a datascience group graduate project developed with programming languages R and Python. The premise of the project analyzed voltage data from a power line and compared the performance of three unsupervised data analysis methods to detect erroneous errors. `);
   } else if ($carouselImages.children().eq(0).hasClass(`prompt`)) {
-    $projectDes.text(`[Prompt Game, General Assembly Landscaper Classic] This is a General Assembly game that was developed with a partner and transformed into an interactive prompt terminal experience. The player character is a landscaper who needs to make choices and save enough money and gather enough tools to win the game.`);
+    $projectDes.text(`[Prompt Game, General Assembly Landscaper Classic] This is a General Assembly game that was developed and personalized with a partner into an interactive prompt terminal experience. The player character is a landscaper who needs to make choices and save enough money and gather enough tools to win the game.`);
   }
 }
 

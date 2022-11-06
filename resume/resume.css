@@ -1,6 +1,5 @@
 html, body {
   min-height: 100vh;
-  max-height: 100%;
   max-width: 100%;
     background-image: url("../background.jpg");
 
@@ -87,15 +86,13 @@ border-top: none;
   font-family: 'Michroma', sans-serif;
 }
 #footerDiv {
-  flex-shrink: 0;
   flex: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  max-height: 5vh;
+  max-height: 7vh;
 }
 #footer {
-  flex-shrink: 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
