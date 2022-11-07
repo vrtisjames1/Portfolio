@@ -151,8 +151,10 @@ border-top: none;
   position: relative;
   margin: 0 1em 4em 1em;
   border: 1px solid black;
-  padding: 0.5em;
+  padding: 0.8em;
   background-color: white;
+  white-space: pre-wrap;
+  text-align: justify;
 }
 @media only screen and (max-width: 600px) {
   #myBio {
