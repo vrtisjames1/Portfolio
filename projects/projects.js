@@ -29,7 +29,8 @@ const $projectText =() => {
     $projectDes.text(`[DBSCAN, False Data Injection] This is a datascience group graduate project developed with programming languages R and Python. The premise of the project analyzed voltage data from a power line and compared the performance of three unsupervised data analysis methods to detect erroneous errors.`);
   } else if ($carouselImages.children().eq(0).hasClass(`prompt`)) {
     $projectDes.text(`[Prompt Game, General Assembly Landscaper Classic] This is a General Assembly game that was developed and personalized with a partner into an interactive prompt terminal experience. The player character is a landscaper who needs to make choices and save enough money and gather enough tools to win the game.`);
-  }
+  } else if ($carouselImages.children().eq(0).hasClass(`marvel`)) {
+    $projectDes.text(`[Express, Arrays] This is a company website created for the marvel characters. This website used express to manage a server and ejs to manage the array data.`);
 }
 
 $projectText();
