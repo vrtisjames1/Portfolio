@@ -31,6 +31,8 @@ const $projectText =() => {
     $projectDes.text(`[Prompt Game, General Assembly Landscaper Classic] This is a General Assembly game that was developed and personalized with a partner into an interactive prompt terminal experience. The player character is a landscaper who needs to make choices and save enough money and gather enough tools to win the game.`);
   }  else if ($carouselImages.children().eq(0).hasClass(`marvel`)) {
     $projectDes.text(`[Express, Arrays] This is a company website created for the marvel characters. This website used express to manage a server and ejs to manage the array data.`);
+  } else if ($carouselImages.children().eq(0).hasClass(`secretsanta`)) {
+    $projectDes.text(`[Express, MongoDB] This is a secret santa website where groups can update their profiles which contains an image, wishlist, and partner restrictin list. The website will randomly assign partners and email the results in secret`);
   }
 }
 
