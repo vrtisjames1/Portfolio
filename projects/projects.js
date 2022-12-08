@@ -32,8 +32,10 @@ const $projectText =() => {
   }  else if ($carouselImages.children().eq(0).hasClass(`marvel`)) {
     $projectDes.text(`[Express, Arrays] This is a company website created for the marvel characters. This website used express to manage a server and ejs to manage the array data.`);
   } else if ($carouselImages.children().eq(0).hasClass(`secretsanta`)) {
-    $projectDes.text(`[Express, MongoDB] This is a secret santa website where groups can update their profiles which contains an image, wishlist, and partner restrictin list. The website will randomly assign partners and email the results in secret`);
-    $('<a>Secret Santa Website</a>').attr("href","https://ancient-bastion-28884.herokuapp.com/").appendTo($projectDes);
+    $projectDes.text(`[Express, MongoDB] This is a secret santa website where groups can update their profiles which contains an image, wishlist, and partner restrictin list. The website will randomly assign partners and email the results in secret
+    `);
+    $('<a>( Secret Santa Website )</a>').attr("href","https://ancient-bastion-28884.herokuapp.com/").appendTo($projectDes);
+    $('<a>( Secret Santa Code )</a>').attr("href","https://git.generalassemb.ly/vrtisjames/app").appendTo($projectDes);
   }
 }
 
