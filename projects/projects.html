@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="projects.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -15,7 +17,7 @@
 </head>
 <body>
 
-  <div id="container">
+<div id="container">
     <header>
       <h1>Jimmy Vrtis</h1>
       <h3>My Projects</h3>
@@ -25,13 +27,77 @@
         <a href="#" class="navHomeButton"> &#9776; </a>
         <a href="../index.html" class="navButton">Home</a>
         <!-- <a href="projects.html" class="navButton">Projects</a> -->
-        <a href="../bio/bio.html" class="navButton">Contact Information</a>
+        <a href="projects.html" class="navButton">Projects</a>
         <a href="https://drive.google.com/file/d/1hvNHDxtfryfxd-T6IqgGPVznmlga_DrI/view?usp=share_link" class="navButton">Resume</a>
+      </div>  
+
+    <div class="skills">
+      <div class="skillsimg">
+        <img src="skills/express.png" alt="santa"  class="card-img-top">
       </div>
-        <h2 id="projectHeader"></h2>
+      <div class="skillsimg">
+        <img src="skills/html.png" alt="santa" class="skillsimg" class="card-img-top">
+      </div>
+      <div class="skillsimg">
+        <img src="skills/mongodb.png" alt="santa" class="skillsimg" class="card-img-top">
+      </div>
+      <div class="skillsimg">
+        <img src="skills/mongoose.png" alt="santa" class="skillsimg" class="card-img-top">
+      </div>
+      <div class="skillsimg">
+        <img src="skills/css.png" alt="santa" class="skillsimg" class="card-img-top">
+      </div>
+      <div class="skillsimg">
+        <img src="skills/react.png" alt="santa" class="skillsimg" class="card-img-top">
+      </div>
+      <div class="skillsimg">
+        <img src="skills/python.png" alt="santa" class="skillsimg" class="card-img-top">
+      </div>
+      <div class="skillsimg">
+        <img src="skills/jquery.png" alt="santa" class="skillsimg" class="card-img-top">
+      </div>
+      <div class="skillsimg">
+        <img src="skills/javascript.png" alt="santa" class="skillsimg" class="card-img-top">
+      </div>
+      <div class="skillsimg">
+        <img src="skills/R.png" alt="santa" class="skillsimg" class="card-img-top">
+      </div>
+    </div>
+
+    <div class=" projects-container">
+        <div class="card" style="width: 18rem;">
+            <img src="images/secretsanta.jpg" alt="santa" class="secretsanta numImage" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">Secret Santa Website</h5>
+            <p class="card-text">An applications to play a game of "Secret Santa". Groups input their names, wishlist, and partner restrictions (such as a spouse), and then names are drawn at random and emailed in secret to each person.</p>
+            <a href="https://github.com/vrtisjames1/app" class="btn btn-primary proj-links" target="_blank">Github</a>
+            <a href="https://ancient-bastion-28884.herokuapp.com/" class="btn btn-primary proj-links" target="_blank">Live Site</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+          <img src="images/teacher.jpg" alt="santa" class="secretsanta numImage" class="card-img-top">
+        <div class="card-body">
+          <h5 class="card-title">Student Updates</h5>
+          <p class="card-text">A front-end and back-end application where a teacher can provide updates on student progress to parents. The website containes user authentication and role-based access to maintain student/parent confidentiality.</p>
+          <a href="https://github.com/vrtisjames1/Proj3_App" class="btn btn-primary proj-links" target="_blank">Github</a>
+          <a href="https://studentupdate.netlify.app/" class="btn btn-primary proj-links" target="_blank">Live Site</a>
+        </div>
+      </div>
+
+      <div class="card" style="width: 18rem;">
+        <img src="images/teacher.jpg" alt="santa" class="secretsanta numImage" class="card-img-top">
+      <div class="card-body">
+        <h5 class="card-title">In progress</h5>
+        <p class="card-text">In progres....</p>
+        <a href="#" class="btn btn-primary proj-links" target="_blank">Github</a>
+        <a href="#" class="btn btn-primary proj-links" target="_blank">Live Site</a>
+    </div>
+  </div>
+</div>
 
 <!-- image and text carousel -->
-        <div id="carousel">
+        <!-- <div id="carousel">
 
             <div><p><a href="#" class="arrow left"></a></p></div>
             <div id="carouselImages">
@@ -40,7 +106,7 @@
               <img src="images/secretsanta.jpg" alt="santa" class="secretsanta numImage">
             </div>
               <div><p><a href="#" class="arrow right"></a></p></div>
-          </div>
+          </div> -->
 
 <!-- image and text carousel  -->
 

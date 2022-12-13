@@ -177,7 +177,7 @@ border-top: none;
   text-align: center;
   padding: 5em;
   border: 0.1px solid silver;
-  padding: 0.4em;
+  padding: 0 5em 0 5em;
   background-color: rgba(255,255,255,0.85);
   font-family: 'Montserrat', sans-serif;
 }
