@@ -117,6 +117,11 @@ border-top: none;
   max-height: 7vh;
   height: 7vh;
 }
+
+.footerButton{
+  color: black;
+}
+
 #footer {
   display: flex;
   flex-wrap: wrap;
