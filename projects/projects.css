@@ -42,6 +42,8 @@ flex: 1 0 auto;
   height: auto;
 }
 
+
+
 .skills{
   display: flex;
   justify-content: space-evenly;
